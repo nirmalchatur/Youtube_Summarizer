@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Play, FileText, Sparkles, AlertCircle, Loader2, Mic, Moon, Activity } from "lucide-react";
+import Navbar from "./component/Navbar";
 
 const videoSuggestions = [
   {
@@ -504,6 +505,7 @@ function App() {
       `}</style>
 
       <div className="app-container">
+        <Navbar />
         <div className="grain-overlay"></div>
         <div className="content-wrapper">
           <div className="main-card">
