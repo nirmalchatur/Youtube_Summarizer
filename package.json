@@ -2,11 +2,9 @@
   "name": "submission",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "start:frontend": "cd video-summarizer-frontend && npm start",
-    "start:backend": "cd backend && npm start",
-    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
-  },
+ "scripts": {
+  "start": "node app.js"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
