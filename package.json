@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "start:frontend": "cd video-summarizer-frontend && npm start",
-  "start:backend": "cd backend && npm start",
-  "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
-},
+    "start:frontend": "cd video-summarizer-frontend && npm start",
+    "start:backend": "cd backend && npm start",
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "build": "react-scripts build"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -16,9 +17,22 @@
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
     "mongoose": "^8.16.3",
+    "react-scripts": "^5.0.1",
     "youtube-transcript-api": "^3.0.6"
   },
   "devDependencies": {
     "concurrently": "^9.2.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
