@@ -2,18 +2,20 @@
   "name": "submission",
   "version": "1.0.0",
   "main": "index.js",
-<<<<<<< HEAD
   "scripts": {
-=======
- "scripts": {
->>>>>>> 53dc0f77f377d53396d025dbb977843331c82245
-  "start": "node app.js"
-},
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "start:frontend": "cd frontend && npm start",
+    "start:backend": "cd backend && node app.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "dependencies": {
+    "concurrently": "^9.2.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
@@ -21,6 +23,6 @@
     "youtube-transcript-api": "^3.0.6"
   },
   "devDependencies": {
-    "concurrently": "^9.2.0"
+    "nodemon": "^2.0.22"
   }
 }
