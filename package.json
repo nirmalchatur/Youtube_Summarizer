@@ -2,7 +2,11 @@
   "name": "submission",
   "version": "1.0.0",
   "main": "index.js",
+<<<<<<< HEAD
   "scripts": {
+=======
+ "scripts": {
+>>>>>>> 53dc0f77f377d53396d025dbb977843331c82245
   "start": "node app.js"
 },
   "keywords": [],
