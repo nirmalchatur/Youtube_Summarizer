@@ -115,4 +115,3 @@ Ensure endpoint: `http://localhost:5000/api/video/process-video` is active.
 
 ---
 
-Let me know if you’d like badges, deployment instructions, or demo GIFs added to this!
